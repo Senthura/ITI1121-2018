@@ -1,2 +1,2 @@
 # ITI1121-2018
-Code used in class
+I'll put here the code I used in class, and some other pieces of code of interest
