@@ -7,7 +7,8 @@ public class Utils {
 	public static void say(String msg, int n) {
 
 		if((n < 0) || (n >= 10)) {
-			say("bad call, bad call");
+			say("bad call, bad call.");
+			say("The method was called with n = " + n);
 		} else {
 
 /*
