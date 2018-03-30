@@ -1,0 +1,74 @@
+public class Test {
+
+    public static void main(String[] args) {
+        
+        Cube c;
+        c = new Cube(new Color[]{Color.BLUE,
+            Color.GREEN,Color.WHITE,Color.GREEN,Color.BLUE,Color.RED});
+
+        c.reset();
+        while (c.hasNext()) {
+            c.next();
+            System.out.println(c);
+        }
+
+        System.out.println("reset:");
+        c.reset();
+        while (c.hasNext()) {
+            c.next();
+            System.out.println(c);
+        }
+
+    }
+}
+
+// > java Test
+// [BLUE, GREEN, WHITE, GREEN, BLUE, RED]
+// [BLUE, BLUE, GREEN, WHITE, GREEN, RED]
+// [BLUE, GREEN, BLUE, GREEN, WHITE, RED]
+// [BLUE, WHITE, GREEN, BLUE, GREEN, RED]
+// [GREEN, WHITE, BLUE, BLUE, RED, GREEN]
+// [GREEN, RED, WHITE, BLUE, BLUE, GREEN]
+// [GREEN, BLUE, RED, WHITE, BLUE, GREEN]
+// [GREEN, BLUE, BLUE, RED, WHITE, GREEN]
+// [WHITE, BLUE, GREEN, RED, GREEN, BLUE]
+// [WHITE, GREEN, BLUE, GREEN, RED, BLUE]
+// [WHITE, RED, GREEN, BLUE, GREEN, BLUE]
+// [WHITE, GREEN, RED, GREEN, BLUE, BLUE]
+// [RED, GREEN, BLUE, GREEN, WHITE, BLUE]
+// [RED, WHITE, GREEN, BLUE, GREEN, BLUE]
+// [RED, GREEN, WHITE, GREEN, BLUE, BLUE]
+// [RED, BLUE, GREEN, WHITE, GREEN, BLUE]
+// [GREEN, BLUE, BLUE, WHITE, RED, GREEN]
+// [GREEN, RED, BLUE, BLUE, WHITE, GREEN]
+// [GREEN, WHITE, RED, BLUE, BLUE, GREEN]
+// [GREEN, BLUE, WHITE, RED, BLUE, GREEN]
+// [BLUE, BLUE, GREEN, RED, GREEN, WHITE]
+// [BLUE, GREEN, BLUE, GREEN, RED, WHITE]
+// [BLUE, RED, GREEN, BLUE, GREEN, WHITE]
+// [BLUE, GREEN, RED, GREEN, BLUE, WHITE]
+// reset:
+// [BLUE, GREEN, WHITE, GREEN, BLUE, RED]
+// [BLUE, BLUE, GREEN, WHITE, GREEN, RED]
+// [BLUE, GREEN, BLUE, GREEN, WHITE, RED]
+// [BLUE, WHITE, GREEN, BLUE, GREEN, RED]
+// [GREEN, WHITE, BLUE, BLUE, RED, GREEN]
+// [GREEN, RED, WHITE, BLUE, BLUE, GREEN]
+// [GREEN, BLUE, RED, WHITE, BLUE, GREEN]
+// [GREEN, BLUE, BLUE, RED, WHITE, GREEN]
+// [WHITE, BLUE, GREEN, RED, GREEN, BLUE]
+// [WHITE, GREEN, BLUE, GREEN, RED, BLUE]
+// [WHITE, RED, GREEN, BLUE, GREEN, BLUE]
+// [WHITE, GREEN, RED, GREEN, BLUE, BLUE]
+// [RED, GREEN, BLUE, GREEN, WHITE, BLUE]
+// [RED, WHITE, GREEN, BLUE, GREEN, BLUE]
+// [RED, GREEN, WHITE, GREEN, BLUE, BLUE]
+// [RED, BLUE, GREEN, WHITE, GREEN, BLUE]
+// [GREEN, BLUE, BLUE, WHITE, RED, GREEN]
+// [GREEN, RED, BLUE, BLUE, WHITE, GREEN]
+// [GREEN, WHITE, RED, BLUE, BLUE, GREEN]
+// [GREEN, BLUE, WHITE, RED, BLUE, GREEN]
+// [BLUE, BLUE, GREEN, RED, GREEN, WHITE]
+// [BLUE, GREEN, BLUE, GREEN, RED, WHITE]
+// [BLUE, RED, GREEN, BLUE, GREEN, WHITE]
+// [BLUE, GREEN, RED, GREEN, BLUE, WHITE]
