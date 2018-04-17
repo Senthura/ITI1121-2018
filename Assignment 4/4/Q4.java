@@ -2,7 +2,7 @@ public class Q4 {
 
     public static void main(String[] args) {
 
-        StudentInfo.display();
+ //       StudentInfo.display();
 
         BinarySearchTree<Integer> bTree;
         bTree = new BinarySearchTree<Integer>();

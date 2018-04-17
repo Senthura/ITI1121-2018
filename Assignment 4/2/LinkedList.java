@@ -115,5 +115,18 @@ public class LinkedList<E> implements List<E> {
 
         size++;
     }
+    public void add(E elem) {
 
+        if (elem == null) {
+            throw new NullPointerException();
+        }
+
+        Node<E> before = head.prev, after = head;
+
+        before.next = new Node<E>(elem, before, after);
+        after.prev = before.next;
+
+        size++;
+    }
+    
 }
